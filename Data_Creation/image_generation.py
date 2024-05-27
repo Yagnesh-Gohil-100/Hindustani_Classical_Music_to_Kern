@@ -15,7 +15,7 @@ def rotate_images(folder_path, angle_range=(-7, 7), step=2, scale_factor=1):
     image_counter = num_original_images + 1
 
     for filename in os.listdir(folder_path):
-        if filename.endswith(".png"):  # Assuming all images are PNG files
+        if filename.endswith(".png"):  
             image_path = os.path.join(folder_path, filename)
             image = cv2.imread(image_path)
 
@@ -37,7 +37,7 @@ def rotate_images(folder_path, angle_range=(-7, 7), step=2, scale_factor=1):
                 canvas[offset_y:offset_y+rotated_image.shape[0], offset_x:offset_x+rotated_image.shape[1]] = rotated_image
 
                 # Save the rotated image with white background and numbered filename
-                rotated_filename = f"{image_counter}_jwg.png"
+                rotated_filename = f"{image_counter}.png"
                 rotated_image_path = os.path.join(folder_path, rotated_filename)
                 cv2.imwrite(rotated_image_path, canvas)
 
@@ -55,15 +55,15 @@ def generate_variety_images(folder_path, scale_factors=[0.8, 0.85, 0.9, 0.95], j
     image_counter = num_existing_images + 5
 
     for filename in os.listdir(folder_path):
-        if filename.endswith(".png"):  # Assuming all images are PNG files
+        if filename.endswith(".png"):  
             image_path = os.path.join(folder_path, filename)
             image = cv2.imread(image_path)
 
             # Generate images with different qualities
             for scale_factor in scale_factors:
                 resized_image = cv2.resize(image, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_LINEAR)
-                blurred_image = cv2.GaussianBlur(resized_image, (5, 5), 0)  # Apply slightly larger blur
-                image_name = f"{image_counter}_snhl.png"
+                blurred_image = cv2.GaussianBlur(resized_image, (5, 5), 0)  
+                image_name = f"{image_counter}.png"
                 image_path = os.path.join(folder_path, image_name)
                 cv2.imwrite(image_path, blurred_image, [cv2.IMWRITE_JPEG_QUALITY, jpeg_quality])
 
