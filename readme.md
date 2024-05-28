@@ -30,3 +30,9 @@ Train and evaluate CNN model using dataset created.
 
 ### Step 4:
 Given PDF of the music composition in Bhatkhande notation, apply segmentation. Recognize swar and text sequences from the pdf, and identify alphabet using model. 
+
+## References
+- Verovio Toolkit: https://verovio.humdrum.org/
+- Humdrum Toolkit: https://www.humdrum.org/
+- Verovio Documentation: https://www.verovio.org/index.xhtml
+- Read Music: https://www.wikihow.com/Read-Music
