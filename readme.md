@@ -1,17 +1,19 @@
-# Project Title
-Creation of Symbolic kern dataset for Hindustani Classical Music:
+# Creation of Symbolic kern dataset for Hindustani Classical Music:
+Machine learning project using python. 
 
 ## Problem Statement
 Given the Hindustani Classical Music Composition in Bhatkhande notation in Scanned document, The goal is to develop a methodology to create a symbolic kern dataset for the composition.
 
 ## Tools required
-python environment and libraries installed in your system
+python environment and libraries installed in your system.
 
 ## Pre-requisites
-1. Understanding of Music Notations:
+**1. Understanding of Music Notations:**
+
 Understanding of music theory is essential, especially regarding scales, intervals, rhythms, and notation systems like Bhatkhande notation and kern notation. This includes understanding the symbols, conventions, and rules of each system.
 
-2. Image Processing Techniques and ML algorithms.
+**2. Image Processing Techniques and ML algorithms:**
+
 Understanding of Lanczos interpolation, Gaussian blur, Sharpening filter, Bounding box for segmentation, and ML algorithms like k-means clustering, HAC (Hierarchical Agglomerative Clustering). Basics of training CNN (Convolution Neural Network) model and evaluation of model for recognition of the Devanagari alphabet.
 
 ## Description
